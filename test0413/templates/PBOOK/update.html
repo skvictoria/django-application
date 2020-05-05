@@ -1,0 +1,10 @@
+<div>
+<form method='POST'>{% csrf_token %}
+	<input type="text" value={{phonebook.name}} name = "name"><br>
+	<input type="number" value={{phonebook.tele}} name = "phNum"><br>
+	<input type="email" value={{phonebook.email}} name = "email"><br>
+	<input type="text" value={{phonebook.addr}} name = "addr"><br>
+	<input type="date" value="{{phonebook.birth | date:'Y-m-d'}}" name = "bir"><br>
+	<input type="submit" value="확인">
+</form>
+</div>

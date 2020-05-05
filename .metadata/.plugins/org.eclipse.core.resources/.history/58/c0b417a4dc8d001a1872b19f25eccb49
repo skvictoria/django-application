@@ -1,0 +1,21 @@
+<html>
+<head>
+
+</head>
+<body>
+<input type = "text" id="demo" size = "50"> 
+<script>
+demo.value = "집어넣은 값"
+/*
+
+var a = confirm('처음 방문입니까?')
+if(a == true){
+	alert("안녕하세요 환영합니다\n 대화상자")
+}else{
+	alert('다시 만나서 반갑습니다')
+}
+document.write("안녕하세요<hr>")
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+	function chkData(){
+		v = document.getElementById("name").value
+		
+		if(document.getElementById("name").value==""){
+			alert("이름은 필수 항목입니다")
+		}else{
+			alert(v+ "님이 입력하셨습니다")
+			fo.submit()
+		}
+	}
+	
+	function pwchk(){
+		input = document.getElementById('input').value
+		document.getElementById('output').value = input
+		document.getElementById('input').value = ""
+	}
+</script>
+</head>
+<body>
+
+<form id = "fo" action = "{% url 'main' %}">
+	<input type = "text" id= "name" placeholder = "아이디">(*필수항목)<br>
+	<input type = "button" value = "저장" onclick="chkData()">
+</form>
+
+<hr>
+<input type = "text" id="demo" size = "50"> 
+
+<script>
+demo.value = "집어넣은 값"
+</script>
+
+<hr>
+<input type = "text" id = "input" onchange = "pwchk()"><br>
+<input type = "text" id = "output"><br>
+
+<script>
+/*
+var a = confirm('처음 방문입니까?')
+if(a == true){
+	alert("안녕하세요 환영합니다\n 대화상자")
+}else{
+	alert('다시 만나서 반갑습니다')
+}
+document.write("안녕하세요<hr>")
+*/
+
+</script>
+</body>
+</html>

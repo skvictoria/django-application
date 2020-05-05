@@ -1,0 +1,12 @@
+<ul>
+
+	{% for values in phonebook %}
+		<li>{{values.id}} : 
+		
+		<a href="http://127.0.0.1:8000/phonebook/detail/{{values.id}}">{{ values.name }}</a> </li>
+	{% endfor %}
+	
+	{% for values in phonebook %}
+		<a href= "{% url 'PB:detail' values.id %}/"> {{values.name}}</a>
+
+</ul>

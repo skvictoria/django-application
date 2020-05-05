@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+	.in{display:inline; padding:0 10px;}
+	.title{color:burlywood; font-size:60px; font-family:Gabriola;}
+</style>
+</head>
+<body>
+<!--  header -->
+<div>
+	<h1> CARE &nbsp; LAB</h1>
+</div>
+<div>
+<hr>
+<ul>
+	<li class = "in">HOME</li> <li class = "in">로그인</li>
+</ul>
+</div>
+extend 값
+{% block amu %}
+
+{% endblock %}
+<!-- main과 연동했으니 확인할것 -->
+<hr>
+마지막 내용
+<!-- footer -->
+<div>
+<i style = "color:pink; font-size : 30px; font-family:Gabrida;">
+Copyright &copy; CARE LAB. ALL reserved.
+</i>
+</div>
+block 끝
+
+
+
+</body>
+</html>

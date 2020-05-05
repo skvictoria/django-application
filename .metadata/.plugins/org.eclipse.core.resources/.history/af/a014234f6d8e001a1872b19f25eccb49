@@ -1,0 +1,10 @@
+from django.db import models
+
+# Create your models here.
+class PhoneBook(models.Model):
+    name = models.CharField(max_length=50, null=False) #데이터가 무조건 들어와야 한다!
+    tele = models.CharField(max_length=20)
+    email = models.EmailField() #@형식
+    addr = models.CharField(max_length=100)
+    birth = models.DateField()
+    writer = models.CharField(max_length = 200, null=False)

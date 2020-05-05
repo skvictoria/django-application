@@ -1,0 +1,10 @@
+<div>
+<form method='POST'>
+<input type="text" placeholder="이름"><br>
+<input type="number" placeholder="전화번호"><br>
+<input type="email" placeholder="이메일"><br>
+<input type="text" placeholder="주소"><br>
+<input type="date" placeholder="연도-월-일"><br>
+<input type="submit" value="확인">
+</form>
+</div>

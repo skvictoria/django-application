@@ -1,0 +1,13 @@
+<html>
+<head>
+
+</head>
+<body>
+<script>
+/*
+ * 
+ */
+document.write("안녕하세요<hr>")
+</script>
+</body>
+</html>

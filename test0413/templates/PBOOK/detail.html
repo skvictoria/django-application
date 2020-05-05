@@ -1,0 +1,8 @@
+{{phonebook.birth | date:'Y m d'}}
+
+
+{% if {{phonebook.writer}}=={{user.username}} %}
+<input type = "button" value = "update" onclick="location.href='{% url 'PB:update' phonebook.id %}'">
+<input type = "button" value = "delete" onclick="location.href='{% url 'PB:delete' phonebook.id %}'">
+
+{% endif %}

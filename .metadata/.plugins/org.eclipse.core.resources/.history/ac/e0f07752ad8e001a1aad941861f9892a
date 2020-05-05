@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Temperature Extractor</title>
+</head>
+<body>
+
+
+<script>
+		function addRow(tableid) {
+			var table = document.getElementById(tableid);
+			var rowlen = table.rows.length;
+			//var row = table.insertRow();		// IE와 Chrome 동작을 달리함.
+			var row = table.insertRow(rowlen-1);	// HTML에서의 권장 표준 문법
+			row.insertCell(0).innerHTML = "";
+			row.insertCell(1).innerHTML = "";
+			row.insertCell(2).innerHTML = "";
+		}
+</script>
+
+<form>
+<table>
+<tr>
+<td rowspan="10">
+<table style="border-collapse: collapse; border: 1px solid #ddd; width: 100%;">
+    <tbody>
+        <tr>
+            <th style="background-color: #004d66; border: 1px solid #ddd; color: white; padding-bottom: 12px; padding-top: 12px; text-align: center;">RGB</th>
+            <th style="background-color: #004d66; border: 1px solid #ddd; color: white; text-align: center;">IR</th>
+            <th style="background-color: #004d66; border: 1px solid #ddd; color: white; text-align: center;">Avg.Temp.</th>
+        </tr>
+        <tr style="background-color: #f2f2f2;">
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--테이블 경계선(table, th, td)  -->
+       </tr>
+       <tr>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--한 줄로 경계선 합치기(table)  border-collapse: collapse;-->
+       </tr>
+       <tr style="background-color: #f2f2f2;">
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--테이블의 너비  (table)width: 100%;-->
+       </tr>
+       <tr>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--테이블 제목행의 윗쪽 여백(th) padding-top: 12px; -->
+       </tr>
+       <tr style="background-color: #f2f2f2;">
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--테이블 제목행의 아랫쪽 여백(th)padding-bottom: 12px; -->
+       </tr>
+       <tr>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--셀의 안쪽 여백(th, td)padding: 8px;-->
+       </tr>
+       <tr style="background-color: #f2f2f2;">
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--제목행의 배경색(th) background-color: #004d66; -->
+       </tr>
+       <tr>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--제목행의 글자색  (th)color: white;-->
+       </tr>
+       <tr style="background-color: #f2f2f2;">
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--제목행의 글자 가운데 정렬 (th)text-align: center; -->
+       </tr>
+       <tr>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <td style="border: 1px solid #ddd; padding: 8px;"></td>
+            <!--데이터행의 얼룩말 무늬 배경색(tr) background-color: #f2f2f2;-->
+       </tr>
+       
+    </tbody>
+    
+</table>
+</td>
+<td>
+	<tr>
+		<th colspan="3">Temperature Extractor v1.2</th>
+		<td rowspan="2" colspan="1">
+			<input type="image" src="./snumark41.png">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">Lab.of Physical Properties and Process Engineering of Agricultural Products</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<input type="image">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="button" value="Load RGB"><br>
+		</td>
+		<td colspan="2">
+		<input type="button" value="Load IR"><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="button" value="RUN"><br>
+		</td>
+		<td colspan="2">
+		<input type="button" value="Save Extracted IR"><br>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<input type="button" value="SAVE"><br>
+		</td>
+		<td colspan="2">
+		<input type="button" value="CLEAR LIST"><br>
+		</td>
+	</tr>
+</td>
+
+
+</tr>
+</table>
+</form>
+<br />
+<!-- ================================== -->
+</body>
+</html>

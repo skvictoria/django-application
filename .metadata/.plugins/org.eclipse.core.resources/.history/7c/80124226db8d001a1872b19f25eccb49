@@ -1,0 +1,14 @@
+<html>
+<head>
+
+</head>
+<body>
+<script>
+/*
+ * 
+ */
+document.write("안녕하세요<hr>")
+alert("안녕하세요 환영합니다\n 대화상자")
+</script>
+</body>
+</html>

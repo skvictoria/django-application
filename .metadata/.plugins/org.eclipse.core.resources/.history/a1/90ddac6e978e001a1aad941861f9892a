@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+extend 값
+{% block amu %}
+
+{% endblock %}
+block 끝
+</body>
+</html>

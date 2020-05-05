@@ -1,0 +1,7 @@
+from django.conf.urls import include, url
+#from django.contrib import admin -> 메인서버에서 지정했으니 필요없음
+from phonebook import views
+urlpatterns = [
+    url(r'^$', views.helloworld),
+    url(r'^detail/([0-9]+', views.detail),
+]

@@ -1,0 +1,7 @@
+<ul>
+
+	{% for values in phonebook %}
+		<li>{{ values }} </li>
+	{% endfor %}
+
+</ul>

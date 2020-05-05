@@ -1,0 +1,20 @@
+######################################
+from django.shortcuts import render###
+######################################
+#def test(request, arg):
+def test(request):
+    context={'key': 'value',
+             'list_1':[[10,20,"list"],[20,10]]
+             }
+    print("test")
+    print(request.POST.get('id'))
+    return render(request, 'HTML/start.html', context)
+    
+def blog(request):
+    return render(request, "HTML/blog.html")
+    
+def second(request):
+    return render(request, "HTML/test.html")
+
+def mainIndex(request):
+    return render(request, "HTML/main.html")
