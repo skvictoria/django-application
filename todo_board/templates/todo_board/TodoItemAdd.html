@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoItem Add</title>
+</head>
+<body>
+    <form method = "POST" action="{% url 'todo_board:fnTodoItemAdd'%}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>

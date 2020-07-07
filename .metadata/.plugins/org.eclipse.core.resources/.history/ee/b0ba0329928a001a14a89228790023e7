@@ -1,7 +1,0 @@
-<ul>
-
-	{% for values in phonebook %}
-		<li>{{values.id}} : {{ values.name }} </li>
-	{% endfor %}
-
-</ul>

@@ -1,9 +1,0 @@
-<ul>
-
-	{% for values in phonebook %}
-		<li>{{values.id}} : 
-		
-		<a href="detail.html">{{ values.name }}</a> </li>
-	{% endfor %}
-
-</ul>

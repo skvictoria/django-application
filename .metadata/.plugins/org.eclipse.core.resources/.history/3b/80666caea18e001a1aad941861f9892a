@@ -1,2 +1,0 @@
-for logout<br>
-<input type = "button" value = "메인으로 이동" onclick="location.href ='{% url 'main' %}'">

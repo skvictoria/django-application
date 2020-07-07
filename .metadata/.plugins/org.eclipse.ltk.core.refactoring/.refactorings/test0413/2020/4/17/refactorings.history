@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move &apos;data.json&apos; to &apos;data&apos;" description="Move &apos;data.json&apos; to &apos;data&apos;" destination="templates/HTML/data" element1="templates/HTML/data.json" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1587569191403" updateReferences="true"/>
-</session>

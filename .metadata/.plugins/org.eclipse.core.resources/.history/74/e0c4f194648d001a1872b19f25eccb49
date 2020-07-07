@@ -1,1 +1,0 @@
-{{phonebook.birth | date:'Y m d'}}

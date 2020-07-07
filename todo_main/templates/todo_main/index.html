@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo Main</title>
+</head>
+<body>
+    <h1>My Main</h1>
+
+    {% for data in todo_datas %}
+    <div>
+        Index : {{data.todo_index}}
+        Title : {{data.todo_title}}
+        Date : {{data.todo_date}}
+        Contents : {{data.todo_contents}}
+    </div>
+    {% endfor %}
+
+</body>
+</html>

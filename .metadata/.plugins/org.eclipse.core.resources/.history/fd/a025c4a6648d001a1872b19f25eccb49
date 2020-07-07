@@ -1,4 +1,0 @@
-{{phonebook.birth | date:'Y m d'}}
-
-<input type = 'button' value = 'update' onclick="location.href={% url 'PB:update' %}">
-<input type = 'button' value = 'delete' onclick="location.href={% url 'PB:delete' %}">
