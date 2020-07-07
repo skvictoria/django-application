@@ -36,3 +36,12 @@ from $your-testfolder-name import views
 url(r'^$your-url-name/', include(admin.site.urls)), //이 때 127.0.0.1:8000/$your-url-name 으로 접근해야.
 
 url(r'^$your-url-name/', $your-file.$your-function-name), //등으로 고칠 수 있음($your-file, $your-function 만들기 전제)
+
+
+## --------------------------------------------------------------------------
+
+## (20200707 추가) How to use django project in Pycharm + MySQL workbench
+
+- 1. setting에서 virtual interpreter 설정
+
+- 2. run configuration에서 manage.py 선택하고 runserver 설정
