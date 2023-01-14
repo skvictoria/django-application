@@ -1,11 +1,11 @@
 # DjangoApplication
 
 ## Preparation
-'''
+```
 Eclipse
 Python
 JDK
-'''
+```
 
 ## How to use Django in Virtual Machine
 
